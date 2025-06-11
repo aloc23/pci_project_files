@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Files</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><img src="logo.png" alt="Logo"><h1>Project Files</h1></header>
+  <main>
+    <label for="folderSelect">Select Folder to View Files</label>
+    <select id="folderSelect" onchange="loadFiles()">
+      <option value="draft contracts">Draft Contracts</option>
+      <option value="drawings">Drawings</option>
+      <option value="folios">Folios</option>
+      <option value="quotes">Quotes</option>
+      <option value="renders">Renders</option>
+    </select>
+    <ul id="fileList"></ul>
+    <iframe id="fileViewer" hidden></iframe>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
